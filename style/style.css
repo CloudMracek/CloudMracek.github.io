@@ -1,0 +1,511 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Ubuntu:wght@300;400;700&display=swap');
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.darkener {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.darkener:hover {
+    animation-name: darkener;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+body {
+    background-color: #3e3e3e;
+}
+
+nav {
+    height: 50px;
+}
+#main-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #ffa112;
+    z-index: 5;
+}
+
+#mobile-menu {
+    justify-content: space-between;
+    width: 80vw;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none !important;
+    padding: 0;
+    position: fixed;
+    top: 0;
+}
+
+#main-nav>ul {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    list-style-type: none;
+    width: 40vw;
+    margin: auto;
+}
+
+#mobile-menu-dropdown {
+    width: 100%;
+    height: 30vh;
+    padding-top: 3rem;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    transform: translateY(47px);
+    padding-left: 0;
+    z-index: 4 !important;
+    margin: 0;
+    list-style-type: none;
+    padding-bottom: 3rem;
+    display: none;
+    animation-name: fly-down;
+    animation-duration: 0.5s;
+}
+
+#mobile-menu-dropdown > li {
+    color: black;
+    text-decoration: none;
+}
+
+#mobile-menu-dropdown > li > a {
+    color: black;
+    padding: 1rem;
+    display: block;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+#mobile-menu-dropdown > li > a:hover {
+    background-color: rgba(0, 0, 0, 0.301);
+}
+
+
+
+.container {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 8px 0;
+    transition: 0.4s;
+}
+
+/* Rotate first bar */
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+/* Fade out the second bar */
+
+.change .bar2 {
+    opacity: 0;
+}
+
+/* Rotate last bar */
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.logo img {
+    height: 50px;
+}
+
+#main-nav>ul>li>a:hover {
+    background-color: #d68710;
+}
+
+#main-nav>ul>li>a {
+    text-decoration: none;
+    line-height: 50px;
+    color: #ffff;
+    padding: 0 10px 0 10px;
+    height: 50px;
+    display: block;
+}
+
+#main-nav ul img {
+    width: 50px;
+}
+
+.block {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.block>.rellax {
+    height: auto;
+    z-index: 1;
+    position: relative;
+    min-height: 120vh;
+    min-width: 100vh;
+    height: auto;
+    left: 50%;
+}
+
+.block>.text-block>h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 120px;
+    color: white;
+    line-height: 110px;
+    margin: 0px;
+}
+
+.block>.text-block {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 120px;
+    position: absolute;
+    display: block;
+    color: white;
+    line-height: 25px;
+    width: 50%;
+    z-index: 2;
+}
+
+.block>.text-block>a {
+    font-size: 25px;
+    text-decoration: none;
+    border: solid 1px white;
+    color: white;
+    padding: 15px;
+    font-family: "Ubuntu";
+}
+
+.block>.text-block>a:hover {
+    background-color: rgba(255, 255, 255, 0.322);
+}
+
+.double-block {
+    display: flex;
+    height: 50vw;
+    width: 100%;
+}
+
+.double-block>.sub-block {
+    width: 50vw;
+    height: 50vw;
+    overflow: hidden;
+    position: relative;
+}
+
+.double-block>.sub-block>.text-block>h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 120px;
+    color: white;
+    line-height: 70px;
+    margin: 0px;
+}
+
+.double-block>.sub-block>.text-block {
+    font-family: 'Bebas Neue', sans-serif;
+    position: absolute;
+    display: block;
+    color: white;
+    line-height: 25px;
+    width: 50%;
+    z-index: 2;
+    text-align: center;
+    pointer-events: none;
+}
+
+.double-block>.sub-block>.rellax {
+    height: 125%;
+    margin-left: 50%;
+}
+
+.blue-block {
+    background-color: #0059a6;
+    width: 100%;
+}
+
+.blue-block>.text-block {
+    width: 50vw;
+    margin: auto;
+    color: white;
+    padding: 5rem;
+    text-align: center;
+}
+
+.blue-block>.text-block>a {
+    font-size: 25px;
+    text-decoration: none;
+    border: solid 1px white;
+    color: white;
+    padding: 15px;
+    font-family: "Ubuntu";
+}
+
+.blue-block>.text-block>a:hover {
+    background-color: rgba(255, 255, 255, 0.322);
+}
+
+.blue-block>.text-block>h1 {
+    text-align: center;
+    font-size: 120px;
+    font-family: 'Bebas Neue', sans-serif;
+    margin: 0;
+}
+
+.blue-block>.text-block>p {
+    font-size: 25px;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    padding-bottom: 35px;
+}
+
+#scroll-icon {
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    z-index: 2;
+}
+
+#welcome-block>.text-block {
+    left: 25%;
+    top: 15%;
+}
+
+#hairpin-block>.text-block {
+    left: 25%;
+    top: 15%;
+}
+
+#pu-block>.text-block {
+    left: 25%;
+    top: 15%;
+}
+
+#aero-block>.text-block {
+    left: 25%;
+    top: 15%;
+}
+
+#power-block>.text-block {
+    right: 5%;
+    top: 15%;
+}
+
+#drivers-block>.text-block {
+    right: 1%;
+    top: 15%;
+}
+
+#jobs-block>.text-block {
+    left: 10%;
+    top: 15%;
+}
+
+#double-block-1>.sub-block>.text-block {
+    left: 25%;
+    top: 15%;
+}
+
+footer {
+    width: 100%;
+    background-color: #ffa112;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    justify-content: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    border-top: solid 5px #0059a6;
+}
+
+footer ul {
+    list-style-type: none;
+    font-size: 20px;
+}
+
+footer ul>li>a {
+    text-decoration: none;
+    color: white;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer>#footer-links {
+    border-left: 1px solid;
+}
+
+footer>#footer-logos {
+    padding-right: 3rem;
+}
+
+footer>#footer-logos>img {
+    width: 5rem
+}
+
+#article-wrapper {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(251, 251, 251);
+}
+
+#article-wrapper>article {
+    width: 50%;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    margin: auto;
+}
+
+#article-wrapper>article>h1 {
+    text-align: center;
+    font-size: 120px;
+    font-family: 'Bebas Neue', sans-serif;
+    margin-bottom: 1rem;
+    margin-top: 1srem;
+}
+
+#article-wrapper>article>img {
+    width: 100%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+#article-wrapper>article>p {
+    text-align: left;
+    font-size: 25px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#article-wrapper>article>ul {
+    text-align: left;
+    font-size: 25px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#gallery {
+    width: 100%;
+}
+
+#gallery>.gallery-row {
+    display: flex;
+    width: 100%;
+}
+
+#gallery>.gallery-row>.img-container {
+    width: 25vw;
+    height: 25vw;
+    overflow: hidden;
+    position: relative;
+    display: block;
+}
+
+#gallery>.gallery-row>.img-container>img {
+    height: 100%;
+    margin-left: 50%;
+    transform: translate(-50%, 0);
+}
+
+@keyframes darkener {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 0.5;
+    }
+}
+
+@keyframes fly-down {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(47px);
+    }
+}
+
+
+@media only screen and (max-width: 2400px) {
+    #main-nav>ul {
+        width: 75vw;
+    }
+    h1 {
+        font-size: 80px !important;
+        line-height: 72px !important;
+    }
+    p {
+        font-size: 20px !important;
+    }
+    .text-block>a {
+        font-size: 20px !important;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .gallery-row {
+        display: block !important;
+        width: 100% !important;
+        height: auto !important;
+    }
+    .gallery-row>.img-container {
+        width: 100% !important;
+        height: auto !important;
+    }
+    .gallery-row>.img-container>img {
+        width: 100% !important;
+        height: auto !important;
+    }
+}
+
+@media only screen and (max-width: 920px) {
+    #main-nav>ul>a {
+        font-size: 15px !important;
+    }
+
+    #main-nav > #desktop-menu {
+        display: none;
+    }
+
+    #main-nav > #mobile-menu {
+        display: flex !important;
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    h1 {
+        font-size: 40px !important;
+        line-height: 35px !important;
+    }
+    p {
+        font-size: 15px !important;
+    }
+    .text-block>a {
+        font-size: 15px !important;
+    }
+    #article-wrapper>article {
+        width: 80%;
+    }
+    .double-block {
+        display: none;
+    }
+}

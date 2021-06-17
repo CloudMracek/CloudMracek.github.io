@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link href="style/lightbox.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>McLaren F1</title>
+</head>
+<body>
+
+    <header>
+        <ul id="mobile-menu-dropdown">
+            <li><a href="thepowerunit.html">THE POWER UNIT</a></li>
+            <li><a href="aero.html">AREO DEPARTMENT</a></li>
+            <li><a href="history.html">HISTORY</a></li>
+            <li><a href="drivers.html">DRIVES</a></li>
+            <li><a href="gallery.html">GALLERY</a></li>
+        </ul>
+        <nav id="main-nav">
+            <ul id="desktop-menu">
+                <li><a class="logo" href="index.html"><img alt="logo" src="images/logo.svg"></a></li>
+                <li><a href="thepowerunit.html">THE POWER UNIT</a></li>
+                <li><a href="aero.html">AREO DEPARTMENT</a></li>
+                <li><a href="history.html">HISTORY</a></li>
+                <li><a href="drivers.html">DRIVES</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+            </ul>
+            <div id="mobile-menu">
+                <a class="logo" href="index.html"><img alt="logo" src="images/logo.svg"></a>
+                <div class="container" onclick="mobileMenu(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+    <main>
+        <div id="gallery">
+            <div class="gallery-row">
+                <a href="images/baku1.png" data-lightbox="gallery" class="img-container">
+                    <div class="darkener"></div>
+                    <img alt="Gallery image" src="images/baku1.png">
+                </a>
+                <a href="images/france1.png" data-lightbox="gallery" class="img-container">
+                    <div class="darkener"></div>
+                    <img alt="Gallery image" src="images/france1.png">
+                </a>
+                <a href="images/japan1.png" data-lightbox="gallery" class="img-container">
+                    <div class="darkener"></div>
+                    <img alt="Gallery image" src="images/japan1.png">
+                </a>
+                <a href="images/melbourne1.png" data-lightbox="gallery" class="img-container">
+                    <div class="darkener"></div>
+                    <img alt="Gallery image" src="images/melbourne1.png">
+                </a>
+            </div>
+            <div class="gallery-row">
+                <a href="images/melbourne2.png" data-lightbox="gallery" class="img-container">
+                    <div class="darkener"></div>
+                    <img alt="Gallery image" src="images/melbourne2.png">
+                </a>
+                <a href="images/monaco1.png" data-lightbox="gallery" class="img-container">
+                    <div class="darkener"></div>
+                    <img alt="Gallery image" src="images/monaco1.png">
+                </a>
+                <a href="images/monaco2.png" data-lightbox="gallery" class="img-container">
+                    <div class="darkener"></div>
+                    <img alt="Gallery image" src="images/monaco2.png">
+                </a>
+                <a href="images/singapore1.png" data-lightbox="gallery" class="img-container">
+                    <div class="darkener"></div>
+                    <img alt="Gallery image" src="images/singapore1.png">
+                </a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="footer-logos">
+            <img alt="McLaren logo" src="images/logo.svg"><br>
+            <img alt="F1 logo" src="images/formula-1-logo.svg">
+        </div>
+
+        <div id="footer-links">
+            <ul>
+                <li><a href="thepowerunit.html">THE POWER UNIT</a></li>
+            <li><a href="aero.html">AREO DEPARTMENT</a></li>
+            <li><a href="history.html">HISTORY</a></li>
+            <li><a href="drivers.html">DRIVES</a></li>
+            <li><a href="gallery.html">GALLERY</a></li>
+            <li><a href="jobs.html">JOBS</a></li>
+            </ul>
+        </div>
+    </footer>
+
+
+    <script src="js/rellax.min.js"></script>
+
+    <!--Tahle věc je horší, než satan...-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <script src="js/lightbox.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/scripts.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>McLaren F1</title>
+</head>
+<body>
+
+    <header>
+        <ul id="mobile-menu-dropdown">
+            <li><a href="thepowerunit.html">THE POWER UNIT</a></li>
+            <li><a href="aero.html">AREO DEPARTMENT</a></li>
+            <li><a href="history.html">HISTORY</a></li>
+            <li><a href="drivers.html">DRIVES</a></li>
+            <li><a href="gallery.html">GALLERY</a></li>
+        </ul>
+        <nav id="main-nav">
+            <ul id="desktop-menu">
+                <li><a class="logo" href="index.html"><img alt="logo" src="images/logo.svg"></a></li>
+                <li><a href="thepowerunit.html">THE POWER UNIT</a></li>
+                <li><a href="aero.html">AREO DEPARTMENT</a></li>
+                <li><a href="history.html">HISTORY</a></li>
+                <li><a href="drivers.html">DRIVES</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+            </ul>
+            <div id="mobile-menu">
+                <a class="logo" href="index.html"><img alt="logo" src="images/logo.svg"></a>
+                <div class="container" onclick="mobileMenu(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+    <main>
+        <div class="block" id="drivers-block">
+            <img alt="Formula 1 in Monaco" class="rellax" src="images/monaco3.png">
+            <img alt="scroll-icon" id="scroll-icon" src="images/scrolling_mousewheel.gif">
+            <div class="text-block" data-aos="fade-up">
+                <h1>Surgical precision</h1>
+            </div>
+        </div>
+        <div id="article-wrapper">
+            <article>
+                <h1>DRIVERS</h1>
+                <p>Our drivers: <b>Daniel Ricciardo</b> and <b>Lando Norris</b> are top class drivers with thousands of hours spent behind the racing wheel.</p>
+            </article>
+        </div>
+       
+    </main>
+    <footer>
+        <div id="footer-logos">
+            <img alt="McLaren logo" src="images/logo.svg"><br>
+            <img alt="F1 logo" src="images/formula-1-logo.svg">
+        </div>
+
+        <div id="footer-links">
+            <ul>
+                <li><a href="thepowerunit.html">THE POWER UNIT</a></li>
+            <li><a href="aero.html">AREO DEPARTMENT</a></li>
+            <li><a href="history.html">HISTORY</a></li>
+            <li><a href="drivers.html">DRIVES</a></li>
+            <li><a href="gallery.html">GALLERY</a></li>
+            <li><a href="jobs.html">JOBS</a></li>
+            </ul>
+        </div>
+    </footer>
+
+
+    <script src="js/rellax.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/scripts.js"></script>
+
+</body>
+</html>
