@@ -10,6 +10,9 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>McLaren F1</title>
+
+    <script src="https://api.mapy.cz/loader.js"></script>
+	<script>Loader.load()</script>
 </head>
 
 <body>
@@ -102,6 +105,13 @@
                 </div>
             </a>
         </div>
+        <div id="mapa" style="width:100%px; height:400px;"></div>
+        <script type="text/javascript">
+            var stred = SMap.Coords.fromWGS84(14.41, 50.08);
+            var mapa = new SMap(JAK.gel("mapa"), stred, 10);
+            mapa.addDefaultLayer(SMap.DEF_BASE).enable();
+            mapa.addDefaultControls();
+        </script>
     </main>
     <footer>
         <div id="footer-logos">
@@ -112,11 +122,11 @@
         <div id="footer-links">
             <ul>
                 <li><a href="thepowerunit.html">THE POWER UNIT</a></li>
-            <li><a href="aero.html">AREO DEPARTMENT</a></li>
-            <li><a href="history.html">HISTORY</a></li>
-            <li><a href="drivers.html">DRIVES</a></li>
-            <li><a href="gallery.html">GALLERY</a></li>
-            <li><a href="jobs.html">JOBS</a></li>
+                <li><a href="aero.html">AREO DEPARTMENT</a></li>
+                <li><a href="history.html">HISTORY</a></li>
+                <li><a href="drivers.html">DRIVES</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="jobs.html">JOBS</a></li>
             </ul>
         </div>
     </footer>

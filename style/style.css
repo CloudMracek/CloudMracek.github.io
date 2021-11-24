@@ -157,7 +157,7 @@ nav {
     position: relative;
 }
 
-.block>.rellax {
+.block .rellax {
     height: auto;
     z-index: 1;
     position: relative;
